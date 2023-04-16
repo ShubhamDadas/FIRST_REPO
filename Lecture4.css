@@ -1,0 +1,43 @@
+h1{
+    color: red;
+}
+
+p{
+    color:yellow;
+}
+
+
+p.class1{
+    color:aquamarine;
+    font-weight: bold;
+}
+
+/* It will change the color of all em tags which are under li tag */
+li em{
+    color: blueviolet;
+}
+
+/* It will style the p tags which are after h1 tag */
+h1+p{
+    color:brown
+}
+
+.class1:hover{
+    text-align: center;
+    text-shadow: 50px;
+}
+
+/* Those paragraphs having class are going to change the style */
+p[class]{
+    width:400px;
+}
+
+/* Paragraph having class="a" */
+p[class="a"]
+{
+    color:red;
+}
+/* Parargraph having id="one"*/
+p#one{
+
+}

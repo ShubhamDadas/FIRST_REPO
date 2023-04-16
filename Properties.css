@@ -1,0 +1,46 @@
+/* colors in css */
+
+/* color
+background color
+border-color */
+
+.background{
+
+    background-size: 1000px;
+   
+    background-image: url("https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg");
+    height: 1000px;
+    width:1000px;
+
+    /* Image does not  repeated */
+    background-repeat: no-repeat;
+
+
+   /* if we scroll the content background remains fixed  */
+    background-attachment: fixed;
+
+    font-style: oblique;
+    font-weight: 700;
+
+    /* background-position: center; */
+
+    /* used to give spacing between words */
+    word-spacing: 4px;
+
+    /* spacing between two rows */
+    line-height: 1;
+
+    /* To give indentation to the content */
+    text-indent: 20px;
+
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 3px 3px 2px white;
+
+}
+
+/* Font Styling */
+
+h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

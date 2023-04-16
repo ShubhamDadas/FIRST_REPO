@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <linK rel="stylesheet" href="Form.css">
+</head>
+<body>
+     <!-- form tag is used to create a form
+     It has 2 imp attributes
+     1.action
+     2.method
+
+
+    Imp elements in form
+    1.Input:
+     It has 2 imp attributes
+     a.type
+     b.name 
+     c.value -->
+
+     <!-- If we are taking input from user then use type="text"
+     For taking password type="password"
+     For giving option to the user we use type="radio"
+     For giving checkbox we use type="checkbox"
+     For uploading file we use type="file"
+     For submit type="submit"
+     For reset type="reset" -->
+
+     <!-- --------------------------------------------------------------------------- -->
+     <!-- textarea is used to take input from the user in multiple rows and columns. It is like comments in instagram -->
+        <!-- <select> tag is used to for taking input from user when we are providing him a dropdown list -->
+         <!-- For giving option to the user for selecting, we use <option></option> tag -->
+ <!-- ____________________________________________________________________________________________________ -->
+ <div class="container">
+    <form action="">
+        <h1 class="main-heading">Payment Form</h1>
+        <h2>Contact Information</h2>
+
+        <!-- name is always imp to put the data in database -->
+        <p>Name:<input type="text" name="name"></p>
+
+        <p>
+        <fieldset>
+            
+            <legend>Gender:</legend>
+                Male<input type="radio" name="gender" >
+                Female<input type="radio" name="gender">
+        </fieldset>
+    </p>          
+
+
+        <p>Address:</p>
+        <textarea name="Address" cols="100" rows="8" required></textarea>
+
+        <p>Email: <input type="email" name="email" placeholder="abc@gmail.com" required></p>
+
+        <p>PinCode: <input type="number" name="PinCode" required></p>
+
+        <hr>
+
+        <h2>PAYMENT DETAILS</h2>
+        <p>Card Type:
+            <select name="card_type" id="card_type">
+                <option value="">---Select a card type---</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+
+        <p>Card Number <input type="number" name="Card_no"></p>
+
+        <p>Expiry Date<input type="date" name="exp_date"></p>
+
+        <p>CVV Number: <input type="password" name="cvv_no"></p>
+        
+        <input type="submit" value="Pay Now">
+        
+    </form>
+</div>
+</body>
+</html>
